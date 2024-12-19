@@ -44,7 +44,6 @@ def main():
         out(50, 0)
 
     start_joint = Joint(90, -36.868, -113.585, 0, -29.130, 0)
-    ##second_point_joint = Joint(130, -36.868, -113.585, 0, -29.130, 0)
     place_p0 = Position(x=-200, y=-369, z=150, Rz=-105, Ry=0, Rx=180, posture=6)
     place_p1 = Position(x=-302, y=-369, z=150, Rz=-117, Ry=0, Rx=180, posture=6)
     place_p2 = Position(x=-77, y=-369, z=150, Rz=-86.4, Ry=0, Rx=180, posture=6)
@@ -79,9 +78,6 @@ def main():
 
                     close_gripper()
                     rb.line(pick_p.offset(dz=50))
-
-                    ##rb.move(start_joint)
-                    ##rb.move(second_point_joint)
 
                     if class_id == 0:
                         rb.move(place_p0)
